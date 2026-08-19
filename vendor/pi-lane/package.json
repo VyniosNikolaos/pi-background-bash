@@ -1,0 +1,44 @@
+{
+  "name": "pi-lane",
+  "version": "0.1.0",
+  "description": "Live lane coordination for Pi sessions",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "lane",
+    "sessions",
+    "coordination"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.ts",
+    "./runtime": "./src/runtime.ts"
+  },
+  "bin": {
+    "pil": "./bin/pil.js"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && node --test --test-force-exit test/*.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "files": [
+    "src",
+    "bin/pil.js",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ]
+}

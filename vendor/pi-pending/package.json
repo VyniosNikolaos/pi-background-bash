@@ -1,0 +1,38 @@
+{
+  "name": "pi-pending",
+  "version": "0.1.5",
+  "description": "Tiny Pi UI helper for one-line pending operation widgets above the editor.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "tui",
+    "pending",
+    "background-jobs",
+    "agent-ui",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Stephen Shkeda",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshkeda/pi-pending.git"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}

@@ -8,7 +8,7 @@ import type { AgentToolUpdateCallback, BashToolDetails, ExtensionAPI, Theme } fr
 import { createBashToolDefinition } from "@earendil-works/pi-coding-agent";
 import { Box, Container, Text } from "@earendil-works/pi-tui";
 import { createPiPending } from "pi-pending";
-import { formatTruncationNotice, piContext, truncateContextText } from "pi-context";
+import { formatTruncationNotice, piContext, truncateContextText } from "../internal/pi-context.ts";
 import { Type } from "typebox";
 
 const MAX_ACTIVE_JOBS = 10;
